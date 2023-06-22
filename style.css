@@ -1,0 +1,184 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Red Hat Display', sans-serif;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(225, 100%, 94%);
+  background-image: url(./images/pattern-background-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.summary-container {
+  background-color: hsl(225, 100%, 98%);
+  max-width: 45rem;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 40px 40px -20px rgba(13, 48, 189, 0.15);
+}
+
+/*******************************/
+/* SUMMARY CONTENT */
+/*******************************/
+
+.summary-img {
+  width: 100%;
+}
+
+.summary-content {
+  font-size: 1.6rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  color: hsl(224, 23%, 55%);
+  padding: 4.8rem;
+}
+
+.summary-title {
+  font-size: 2.8rem;
+  color: hsl(223, 47%, 23%);
+  font-weight: 900;
+}
+
+.summary-description {
+  line-height: 2.6rem;
+  font-weight: 500;
+  margin: 2rem 0;
+}
+
+/*******************************/
+/* PLAN BOX */
+/*******************************/
+
+.plan-box {
+  background-color: hsl(227, 100%, 96%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2.4rem;
+  margin-bottom: 3.2rem;
+  text-align: left;
+  border-radius: 11px;
+}
+
+.plan-box-left {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.sub-title {
+  color: hsl(223, 47%, 23%);
+  font-size: 1.6rem;
+  font-weight: 900;
+}
+
+/* L V H A */
+
+.btn-change:link,
+.btn-change:visited {
+  color: hsl(245, 75%, 52%);
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.btn-change:hover,
+.btn-change:active {
+  color: hsl(245, 60%, 60%);
+}
+
+/*******************************/
+/* BTN SECTION */
+/*******************************/
+.btn {
+  font-family: 'Red Hat Display', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 900;
+  border: none;
+  background-color: hsl(245, 75%, 52%);
+  color: #fff;
+  border-radius: 11px;
+  padding: 1.5rem 0;
+  margin-bottom: 3.2rem;
+  box-shadow: 0 20px 20px 0 rgba(56, 42, 225, 0.19);
+}
+
+.btn:hover {
+  cursor: pointer;
+  background-color: hsl(245, 82%, 41%);
+}
+
+/* L V H A */
+.btn-cancel:link,
+.btn-cancel:visited {
+  color: hsl(224, 23%, 55%);
+  font-size: 1.4rem;
+  text-decoration: none;
+  font-weight: 900;
+}
+
+.btn-cancel:hover,
+.btn-cancel:active {
+  color: hsl(245, 60%, 60%);
+}
+
+@media (max-width: 48em) {
+  body {
+    background-image: url(./images/pattern-background-mobile.svg);
+  }
+
+  .summary-container {
+    max-width: 32.7rem;
+  }
+
+  /*******************************/
+  /* SUMMARY CONTENT */
+  /*******************************/
+  .summary-title {
+    font-size: 2.2rem;
+  }
+
+  .sub-title {
+    font-size: 1.4rem;
+  }
+
+  .summary-content {
+    font-size: 1.6rem;
+    padding: 2.4rem;
+  }
+
+  /*******************************/
+  /* PLAN BOX */
+  /*******************************/
+
+  .plan-box {
+    padding: 1.6rem;
+  }
+
+  .plan-box-left {
+    gap: 1.5rem;
+  }
+
+  .btn-change:link {
+    font-size: 1.3rem;
+  }
+
+  /*******************************/
+  /* BTN SECTION */
+  /*******************************/
+
+  .btn-cancel:link {
+    font-size: 1.5rem;
+  }
+}
